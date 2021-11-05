@@ -1,1 +1,1 @@
-sed -e "s|\/Users\/Demo1|${HOME}|"
+sed -e "s|\/Users\/Demo1|${HOME}|g"
