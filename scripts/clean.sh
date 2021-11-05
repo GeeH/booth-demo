@@ -1,0 +1,1 @@
+sed -e "s|${HOME}|\/Users\/Demo1|"
