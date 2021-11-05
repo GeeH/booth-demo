@@ -29,8 +29,8 @@
     "versioned_id": "coreaudio_input_capture",
     "volume": 1.0
   },
-  "current_program_scene": "AFK",
-  "current_scene": "AFK",
+  "current_program_scene": "Press Buttons",
+  "current_scene": "Press Buttons",
   "current_transition": "Fade",
   "groups": [],
   "modules": {
@@ -105,21 +105,12 @@
       "deinterlace_mode": 0,
       "enabled": true,
       "flags": 0,
-      "hotkeys": {
-        "MediaSource.Pause": [],
-        "MediaSource.Play": [],
-        "MediaSource.Restart": [],
-        "MediaSource.Stop": [],
-        "libobs.mute": [],
-        "libobs.push-to-mute": [],
-        "libobs.push-to-talk": [],
-        "libobs.unmute": []
-      },
-      "id": "ffmpeg_source",
-      "mixers": 255,
+      "hotkeys": {},
+      "id": "image_source",
+      "mixers": 0,
       "monitoring_type": 0,
       "muted": false,
-      "name": "Press Buttons Media",
+      "name": "BRB IMG",
       "prev_ver": 453050371,
       "private_settings": {},
       "push-to-mute": false,
@@ -127,11 +118,12 @@
       "push-to-talk": false,
       "push-to-talk-delay": 0,
       "settings": {
-        "local_file": "/Users/ghockin/Library/Application Support/obs-studio/basic/assets/press-buttons.mp4",
-        "looping": true
+        "file": "/Users/ghockin/Library/Application Support/obs-studio/basic/assets/We'll Be Right Back!.png",
+        "linear_alpha": false,
+        "unload": false
       },
       "sync": 0,
-      "versioned_id": "ffmpeg_source",
+      "versioned_id": "image_source",
       "volume": 1.0
     },
     {
@@ -142,14 +134,14 @@
       "flags": 0,
       "hotkeys": {
         "OBSBasic.SelectScene": [],
-        "libobs.hide_scene_item.Press Buttons Media": [],
-        "libobs.show_scene_item.Press Buttons Media": []
+        "libobs.hide_scene_item.BRB IMG": [],
+        "libobs.show_scene_item.BRB IMG": []
       },
       "id": "scene",
       "mixers": 0,
       "monitoring_type": 0,
       "muted": false,
-      "name": "Press Buttons",
+      "name": "AFK",
       "prev_ver": 453050371,
       "private_settings": {},
       "push-to-mute": false,
@@ -163,11 +155,11 @@
           {
             "align": 5,
             "bounds": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 1920.0,
+              "y": 1080.0
             },
             "bounds_align": 0,
-            "bounds_type": 0,
+            "bounds_type": 1,
             "crop_bottom": 0,
             "crop_left": 0,
             "crop_right": 0,
@@ -178,7 +170,7 @@
             },
             "id": 1,
             "locked": false,
-            "name": "Press Buttons Media",
+            "name": "BRB IMG",
             "pos": {
               "x": 0.0,
               "y": 0.0
@@ -199,38 +191,6 @@
       },
       "sync": 0,
       "versioned_id": "scene",
-      "volume": 1.0
-    },
-    {
-      "balance": 0.5,
-      "deinterlace_field_order": 0,
-      "deinterlace_mode": 0,
-      "enabled": true,
-      "flags": 0,
-      "hotkeys": {
-        "libobs.mute": [],
-        "libobs.push-to-mute": [],
-        "libobs.push-to-talk": [],
-        "libobs.unmute": []
-      },
-      "id": "browser_source",
-      "mixers": 255,
-      "monitoring_type": 0,
-      "muted": false,
-      "name": "Browser",
-      "prev_ver": 453050371,
-      "private_settings": {},
-      "push-to-mute": false,
-      "push-to-mute-delay": 0,
-      "push-to-talk": false,
-      "push-to-talk-delay": 0,
-      "settings": {
-        "height": 1080,
-        "url": "https://bbc.co.uk",
-        "width": 1920
-      },
-      "sync": 0,
-      "versioned_id": "browser_source",
       "volume": 1.0
     },
     {
@@ -307,15 +267,47 @@
       "enabled": true,
       "flags": 0,
       "hotkeys": {
+        "libobs.mute": [],
+        "libobs.push-to-mute": [],
+        "libobs.push-to-talk": [],
+        "libobs.unmute": []
+      },
+      "id": "browser_source",
+      "mixers": 255,
+      "monitoring_type": 0,
+      "muted": false,
+      "name": "Browser",
+      "prev_ver": 453050371,
+      "private_settings": {},
+      "push-to-mute": false,
+      "push-to-mute-delay": 0,
+      "push-to-talk": false,
+      "push-to-talk-delay": 0,
+      "settings": {
+        "height": 1080,
+        "url": "https://bbc.co.uk",
+        "width": 1920
+      },
+      "sync": 0,
+      "versioned_id": "browser_source",
+      "volume": 1.0
+    },
+    {
+      "balance": 0.5,
+      "deinterlace_field_order": 0,
+      "deinterlace_mode": 0,
+      "enabled": true,
+      "flags": 0,
+      "hotkeys": {
         "OBSBasic.SelectScene": [],
-        "libobs.hide_scene_item.BRB IMG": [],
-        "libobs.show_scene_item.BRB IMG": []
+        "libobs.hide_scene_item.Press Buttons Media": [],
+        "libobs.show_scene_item.Press Buttons Media": []
       },
       "id": "scene",
       "mixers": 0,
       "monitoring_type": 0,
       "muted": false,
-      "name": "AFK",
+      "name": "Press Buttons",
       "prev_ver": 453050371,
       "private_settings": {},
       "push-to-mute": false,
@@ -329,11 +321,11 @@
           {
             "align": 5,
             "bounds": {
-              "x": 1920.0,
-              "y": 1080.0
+              "x": 0.0,
+              "y": 0.0
             },
             "bounds_align": 0,
-            "bounds_type": 1,
+            "bounds_type": 0,
             "crop_bottom": 0,
             "crop_left": 0,
             "crop_right": 0,
@@ -344,7 +336,7 @@
             },
             "id": 1,
             "locked": false,
-            "name": "BRB IMG",
+            "name": "Press Buttons Media",
             "pos": {
               "x": 0.0,
               "y": 0.0
@@ -373,12 +365,21 @@
       "deinterlace_mode": 0,
       "enabled": true,
       "flags": 0,
-      "hotkeys": {},
-      "id": "image_source",
-      "mixers": 0,
+      "hotkeys": {
+        "MediaSource.Pause": [],
+        "MediaSource.Play": [],
+        "MediaSource.Restart": [],
+        "MediaSource.Stop": [],
+        "libobs.mute": [],
+        "libobs.push-to-mute": [],
+        "libobs.push-to-talk": [],
+        "libobs.unmute": []
+      },
+      "id": "ffmpeg_source",
+      "mixers": 255,
       "monitoring_type": 0,
       "muted": false,
-      "name": "BRB IMG",
+      "name": "Press Buttons Media",
       "prev_ver": 453050371,
       "private_settings": {},
       "push-to-mute": false,
@@ -386,12 +387,11 @@
       "push-to-talk": false,
       "push-to-talk-delay": 0,
       "settings": {
-        "file": "/Users/ghockin/Library/Application Support/obs-studio/basic/assets/We'll Be Right Back!.png",
-        "linear_alpha": false,
-        "unload": false
+        "local_file": "/Users/ghockin/Library/Application Support/obs-studio/basic/assets/press-buttons.mp4",
+        "looping": true
       },
       "sync": 0,
-      "versioned_id": "image_source",
+      "versioned_id": "ffmpeg_source",
       "volume": 1.0
     }
   ],
