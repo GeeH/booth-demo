@@ -1,3 +1,7 @@
 .idea/
+.DS_Store
 scenes/*.json.bak
-
+# Ignore all other scene collections
+# Except for Booth_Demo.json (to be on the safe-side, shouldn't be needed because the file is already tracked)
+scenes/*.json
+!scenes/Booth_Demo.json
